@@ -1,0 +1,67 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 150;
+  animation: fadeIn 0.3s ease;
+}
+
+.slideModal {
+  position: fixed;
+  top: 0;
+  width: 300px;
+  height: 100vh;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 200;
+  transition: all 0.3s ease;
+  overflow-y: auto;
+}
+
+/* Modal that slides from right to left */
+.right {
+  right: -300px;
+}
+
+/* Modal that slides from left to right */
+.left {
+  left: -300px;
+}
+
+.right.open {
+  right: 0;
+}
+
+.left.open {
+  left: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* מותאם למובייל */
+@media (max-width: 767px) {
+  .slideModal {
+    width: 85%;
+    max-width: 300px;
+  }
+  
+  .right {
+    right: -85%;
+    max-width: 300px;
+  }
+  
+  .left {
+    left: -85%;
+    max-width: 300px;
+  }
+} 

@@ -2,9 +2,9 @@
 
 import React, { useState } from "react";
 import styles from "./Header.module.css";
-import UserMenu from "../UserMenu/UserMenu.jsx";
 import Image from "next/image";
 import { useConversation } from "../../context/ConversationContext.jsx";
+import RecentChats from "../RecentChats/RecentChats.jsx";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -50,7 +50,7 @@ export default function Header() {
           </button>
         </div>
       </header>
-      <UserMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
+      <RecentChats isOpen={isMenuOpen} onClose={toggleMenu} direction="right" />
     </>
   );
 }

@@ -33,13 +33,13 @@
 
 .authButtons {
   display: flex;
-  gap: 10px;
+  gap: 8px;
 }
 
 .authButton {
   padding: 8px 16px;
   border-radius: 20px;
-  font-size: 14px;
+  font-size: 16px;
   cursor: pointer;
   transition: all 0.2s ease;
   border: 1px solid #000;
@@ -87,7 +87,7 @@
 }
 
 .hamburgerIcon.active span:nth-child(1) {
-  transform: translateY(9px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
 }
 
 .hamburgerIcon.active span:nth-child(2) {
@@ -95,24 +95,39 @@
 }
 
 .hamburgerIcon.active span:nth-child(3) {
-  transform: translateY(-9px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 /* Responsive styles */
 @media (max-width: 768px) {
   .header {
-    padding: 15px;
+    padding: 16px;
   }
   
   .authButton {
-    padding: 6px 12px;
-    font-size: 12px;
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+  
+  .headerLogo img {
+    width: 140px;
+    height: auto;
   }
 }
 
 @media (max-width: 480px) {
   .authButton {
-    padding: 5px 10px;
-    font-size: 11px;
+    padding: 4px 8px;
+    font-size: 16px;
+  }
+  
+  .hamburgerIcon {
+    width: 24px;
+    height: 16px;
+  }
+  
+  .headerLogo img {
+    width: 120px;
+    height: auto;
   }
 } 

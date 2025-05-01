@@ -2,16 +2,24 @@
   width: 100%;
   text-align: center;
   position: relative;
+  padding: 16px 12px;
 }
 
 .footer p {
   color: #666;
-  font-size: 0.8rem;
+  font-size: 16px;
   opacity: 0.7;
   transition: opacity 0.3s ease;
   min-height: 40px;
+  margin: 0;
 }
 
 .footer:hover p {
   opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 12px 8px;
+  }
 } 

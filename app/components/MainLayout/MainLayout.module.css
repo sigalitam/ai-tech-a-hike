@@ -25,6 +25,14 @@
 
 @media (max-width: 768px) {
   .mainContent {
-    padding: 0 15px;
+    padding: 0 16px;
+    height: calc(100dvh - 72px);
+  }
+}
+
+@media (max-width: 480px) {
+  .mainContent {
+    padding: 0 12px;
+    height: calc(100dvh - 60px);
   }
 }

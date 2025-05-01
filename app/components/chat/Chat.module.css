@@ -53,7 +53,7 @@
 }
 
 .chatConversationMode .chatContent {
-  gap: 10px;
+  gap: 8px;
 }
 
 .chatContent {
@@ -85,6 +85,11 @@
   position: relative;
   margin-bottom: 10px;
   animation: fadeIn 1.2s ease;
+}
+
+.logo > img {
+  width: 100%;
+  object-fit: contain;
 }
 
 .logo h1 {
@@ -123,7 +128,7 @@
 
 .searchForm {
   display: flex;
-  border-radius: 25px;
+  border-radius: 24px;
   overflow: hidden;
   border: solid 1px #D9D9D9;
   background: #F8F8F8;
@@ -139,7 +144,7 @@
   padding: 16px 20px;
   border: none;
   outline: none;
-  font-size: 1rem;
+  font-size: 16px;
   direction: rtl;
   min-height: 52px;
   resize: none;
@@ -156,12 +161,12 @@
   background-color: #f3a847;
   color: white;
   border: none;
-  padding: 6px 16px;
+  padding: 8px 16px;
   cursor: pointer;
-  border-radius: 25px;
+  border-radius: 24px;
   position: absolute;
-  left: 11px;
-  bottom: 11px;
+  left: 8px; 
+  bottom: 8px;
 }
 
 .searchButton:hover {
@@ -171,7 +176,7 @@
 .quickLinks {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 16px;
   width: 100%;
   flex-wrap: wrap;
   animation: fadeIn 1s ease 0.3s both;
@@ -185,7 +190,7 @@
   padding: 8px 16px;
   cursor: pointer;
   transition: all 0.3s ease;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .quickLinkButton:hover {
@@ -200,7 +205,7 @@
   padding: 10px 0;
   margin-top: 10px;
   color: #666;
-  font-size: 0.8rem;
+  font-size: 14px;
 }
 
 .footerContent {
@@ -256,29 +261,16 @@
     height: auto;
   }
   
-  .searchForm {
-    flex-direction: column;
-    border-radius: 15px;
+  .logo h1 {
+    font-size: 2.5rem;
   }
   
-  .searchInput {
-    padding: 12px 15px;
-    border-radius: 15px 15px 0 0;
-  }
-  
-  .searchButton {
-    padding: 12px;
-    border-radius: 0 0 15px 15px;
+  .tagline {
+    font-size: 1rem;
   }
   
   .quickLinks {
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .quickLinkButton {
-    width: 100%;
-    padding: 12px;
+    gap: 8px;
   }
 }
 
@@ -287,7 +279,16 @@
     width: 220px;
   }
   
+  .logo h1 {
+    font-size: 2rem;
+  }
+  
   .chatContent {
     gap: 30px;
+    padding: 0 15px;
+  }
+  
+  .searchInput {
+    font-size: 16px;
   }
 } 

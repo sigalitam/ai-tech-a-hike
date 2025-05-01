@@ -10,6 +10,7 @@
   --text-color: #333333;
   --light-text: #666666;
   --border-color: rgba(0, 0, 0, 0.1);
+  --base-font-size: 16px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -31,7 +32,7 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: var(--base-font-size);
 }
 
 body {
@@ -56,7 +57,7 @@ input, button, textarea, select {
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: var(--base-font-size);
 }
 
 @keyframes fadeIn {
@@ -76,5 +77,22 @@ input, button, textarea, select {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* התאמה למובייל */
+@media (max-width: 768px) {
+  :root {
+    --base-font-size: 16px;
+  }
+  
+  html, body {
+    font-size: var(--base-font-size);
+  }
+}
+
+@media (max-width: 480px) {
+  input, textarea, button {
+    font-size: 16px; /* מונע זום אוטומטי במכשירי iOS */
   }
 }
